@@ -39,7 +39,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchPlan();
-  }, [fetchPlan]);
+  }, []);
 
   useEffect(() => {
     if (plan) {

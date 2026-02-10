@@ -146,3 +146,9 @@ function App() {
 }
 
 export default App;
+
+
+/*
+handle wrong route
+proctected route verify again
+*/

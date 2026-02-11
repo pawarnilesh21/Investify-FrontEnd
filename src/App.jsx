@@ -12,6 +12,7 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Error from './pages/Error';
 import Dashboard from './pages/dashboard/Dashboard';
+import SipCalculator from './pages/dashboard/SipCalculator';
 import Goals from './pages/dashboard/Goals';
 import History from './pages/dashboard/History';
 import Settings from './pages/dashboard/Settings';
@@ -78,6 +79,14 @@ function AppRoutes() {
             <DashboardProvider>
               <Dashboard />
             </DashboardProvider>
+          </ProtectedRoute>
+        } 
+      />
+       <Route 
+        path="/dashboard/sip-calculator" 
+        element={
+          <ProtectedRoute>
+            <SipCalculator />
           </ProtectedRoute>
         } 
       />
@@ -150,5 +159,6 @@ export default App;
 
 /*
 handle wrong route
-proctected route verify again
+protested route verify again
 */
+  

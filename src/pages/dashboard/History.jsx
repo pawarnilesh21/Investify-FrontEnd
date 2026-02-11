@@ -1,5 +1,6 @@
 // src/pages/dashboard/History.jsx
 // Purpose: Investment history page
+//display the Static History
 
 import Navbar from '../../components/common/Navbar';
 import { Calendar, TrendingUp, TrendingDown } from 'lucide-react';

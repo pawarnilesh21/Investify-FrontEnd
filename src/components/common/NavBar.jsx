@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import { Menu, X, LogOut, User, LayoutDashboard, Target, History, Settings } from 'lucide-react';
+import { Menu, X, LogOut, User, LayoutDashboard, Target, History, Settings, Calculator } from 'lucide-react';
 
 const Navbar = () => {
   const nav = useNavigate();
@@ -12,8 +12,11 @@ const Navbar = () => {
   const { user, logout } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+
+  //Add one more which is sipCalculator
   const navItems = [
     { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
+    {name:'SIP Calculator', path:'/dashboard/sip-calculator',icon:Calculator},
     { name: 'Goals', path: '/dashboard/goals', icon: Target },
     { name: 'History', path: '/dashboard/history', icon: History },
     { name: 'Settings', path: '/dashboard/settings', icon: Settings },
@@ -142,6 +145,6 @@ export default Navbar;
 
 
 /*
-1.Need to Add Sip Calculate Section 
+1.Need to Add Sip Calculate Section inside the dashboard and goal
 2.
 */

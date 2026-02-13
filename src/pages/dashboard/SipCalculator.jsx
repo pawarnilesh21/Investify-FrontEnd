@@ -7,7 +7,7 @@ import SliderInput from '../../components/dashboard/SliderInput';
 import SipChart from '../../components/dashboard/SipChart';
 import SipResults from '../../components/dashboard/SipResults';
 import SipInfo from '../../components/dashboard/SipInfo';
-
+import {toast } from "react-hot-toast"
 const SipCalculator = () => {
   const [calculatorMode, setCalculatorMode] = useState('SIP'); // 'SIP' or 'Lumpsum'
   
@@ -69,6 +69,10 @@ const SipCalculator = () => {
     return num.toLocaleString('en-IN');
   };
 
+  //handleSubmit
+  const handleSubmit=()=>{
+   toast.success("This Feature is in progress State")
+  } 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <Navbar />
@@ -195,7 +199,7 @@ const SipCalculator = () => {
               />
 
               {/* Invest Now Button */}
-              <button className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-green-500/50 transition-all duration-300 transform hover:scale-105">
+              <button onClick={handleSubmit} className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-green-500/50 transition-all duration-300 transform hover:scale-105">
                 INVEST NOW
               </button>
             </div>
@@ -217,3 +221,9 @@ const SipCalculator = () => {
 };
 
 export default SipCalculator;
+
+
+/*
+ divide in some Parts ..!!
+ 
+*/

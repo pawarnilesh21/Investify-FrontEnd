@@ -3,7 +3,6 @@
 
 import Navbar from '../../components/common/Navbar';
 import { Target, Home, Car, GraduationCap, Heart } from 'lucide-react';
-
 const Goals = () => {
   const goals = [
     {
@@ -19,6 +18,7 @@ const Goals = () => {
       title: 'Buy Car',
       target: '₹12,00,000',
       timeline: '3 years',
+   
       monthlySIP: '₹28,000',
       color: 'pink'
     },
@@ -26,6 +26,7 @@ const Goals = () => {
       icon: GraduationCap,
       title: 'Education Fund',
       target: '₹25,00,000',
+     
       timeline: '15 years',
       monthlySIP: '₹8,000',
       color: 'blue'
@@ -39,7 +40,6 @@ const Goals = () => {
       color: 'green'
     }
   ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <Navbar />
@@ -95,11 +95,12 @@ const Goals = () => {
     </div>
   );
 };
-
 export default Goals;
 
 
 /*
 1. Should work on that endpoint
 2. Test And then improve neeed 
+3. it can be a modifiable its also work like a SIP section 
+4. ex: if you want buy a car of 10lack then give the best plan for the car 
 */  

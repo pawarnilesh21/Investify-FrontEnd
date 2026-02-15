@@ -101,9 +101,11 @@ const Dashboard = () => {
   // Save plan
   const handleSavePlan = async () => {
     try {
+    
       await saveUserPlan();
       toast.success('Plan saved successfully!');
-    } catch (error) {
+    }
+       catch (error) {
       toast.error('Failed to save plan');
     }
   };
@@ -133,17 +135,14 @@ const Dashboard = () => {
     doc.save('investify-plan.pdf');
     toast.success('PDF downloaded!');
   };
-
   // Modify plan
   const handleModifyPlan = () => {
     setStep(1);
     setShowRecommendations(false);
   };
-
   if (loading) {
     return <Loader fullScreen />;
   }
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <Navbar />
@@ -279,5 +278,6 @@ export default Dashboard;
 3.Add lazy loading
 4.Split dashboard into DashboardContainer + DashboardView
 5.Create useRecommendations hook
+6. quickActions improments Need
 */
 

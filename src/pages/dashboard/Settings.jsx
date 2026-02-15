@@ -203,4 +203,6 @@ export default Settings;
 /*
 1.Update endpoints to updatePassword
 1.add Validation Here Also
+2. Most Important Is Backend Routes Needed 
+3. Check Routes again for Setting all Feature
 */

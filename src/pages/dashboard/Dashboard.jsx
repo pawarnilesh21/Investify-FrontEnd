@@ -240,12 +240,14 @@ const Dashboard = () => {
               </div>
             )}
 
+
             {loadingRecs && (
               <div className="text-center py-8">
                 <Loader />
                 <p className="text-gray-400 mt-4">Loading recommendations...</p>
               </div>
             )}
+
 
             {/* Insights */}
             <div className="mb-8">
@@ -276,8 +278,10 @@ export default Dashboard;
 1 PDF + recommendations into hooks/utils
 2.Introduce step constants
 3.Add lazy loading
+
 4.Split dashboard into DashboardContainer + DashboardView
 5.Create useRecommendations hook
 6. quickActions improments Need
+
 */
 

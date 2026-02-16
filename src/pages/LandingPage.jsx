@@ -173,6 +173,8 @@ const LandingPage = () => {
         </div>
       </section>
 
+
+
       {/* How It Works */}
       <section id="how-it-works" className="py-20 px-6 bg-gradient-to-br from-purple-900/30 to-pink-900/30">
         <div className="container mx-auto">
@@ -226,6 +228,8 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+
+
 
       {/* Footer */}
       <footer className="bg-slate-950 py-12 px-6">
@@ -292,5 +296,7 @@ export default LandingPage;
 
 /*
 
+
 Work on #aboutSection
+
 */

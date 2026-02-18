@@ -9,7 +9,7 @@ export const validateEmail = (email) => {
 
 // Validate password strength
 export const validatePassword = (password) => {
-  if (password.length < 6) {
+  if (password.length <= 6) {
     return { valid: false, message: 'Password must be at least 6 characters' };
   }
   return { valid: true, message: '' };
@@ -56,4 +56,5 @@ export const validateInvestmentPercentage = (percentage) => {
 Remaining Things 
 1. Name Validation 
 2. It should Display Message wht shoudl validate
+3.  
 */

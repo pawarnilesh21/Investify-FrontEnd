@@ -12,6 +12,7 @@ export const formatCurrency = (amount) => {
   }).format(amount);
 };
 
+
 // Format to compact notation (e.g., ₹1.5L, ₹2.3Cr)
 export const formatCompactCurrency = (amount) => {
   if (!amount && amount !== 0) return '₹0';
@@ -26,6 +27,7 @@ export const formatCompactCurrency = (amount) => {
   
   return `₹${amount.toLocaleString('en-IN')}`;
 };
+
 
 // Format without currency symbol
 export const formatNumber = (num) => {

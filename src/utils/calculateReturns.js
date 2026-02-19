@@ -20,6 +20,7 @@ export const calculateSIPReturns = (monthlyAmount, years, annualRate) => {
   };
 };
 
+
 // Calculate compound interest
 export const calculateCompoundInterest = (principal, years, annualRate) => {
   const amount = principal * Math.pow(1 + annualRate / 100, years);
@@ -49,6 +50,7 @@ export const calculateRetirementCorpus = (currentAge, retirementAge, monthlyExpe
   // Total needed for retirement (simplified)
   const totalNeeded = futureMonthlyExpenses * 12 * yearsInRetirement;
   
+
   return Math.round(totalNeeded);
 };
 
@@ -60,6 +62,7 @@ export const projectPortfolioGrowth = (currentValue, monthlyInvestment, years, e
     const sipValue = calculateSIPReturns(monthlyInvestment, year, expectedReturn);
     const currentValueGrowth = currentValue * Math.pow(1 + expectedReturn / 100, year);
     const totalValue = sipValue.futureValue + currentValueGrowth;
+  
     
     projections.push({
       year,

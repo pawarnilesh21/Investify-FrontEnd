@@ -18,7 +18,7 @@ import History from './pages/dashboard/History';
 import Settings from './pages/dashboard/Settings';
 
 import Loader from './components/common/Loader';
-
+ 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
   const { isAuth, loading } = useAuth();

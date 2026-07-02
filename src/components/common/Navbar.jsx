@@ -17,13 +17,10 @@ const Navbar = () => {
   const navItems = [
     { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
     {name:'SIP Calculator', path:'/dashboard/sip-calculator',icon:Calculator},
-    { name: 'Goals', path: '/dashboard/goals', icon: Target },
+    { name: 'Goals', path: git commit -m "Rename DashboardContext correctly"
     { name: 'History', path: '/dashboard/history', icon: History },
     { name: 'Settings', path: '/dashboard/settings', icon: Settings },
   ];
-
-  const handleLogout = () => {
-    logout();
     nav('/login');
   };
 
